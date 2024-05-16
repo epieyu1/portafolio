@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Taller</title>
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="logo">
+          <i class='bx bxl-xing'></i>
+          <span>Alex Restrepo </span>
+        </a>
+
+        <div id="menu" class="menu clase2 clase3">
+          <button type="button" id="btnClose" class="btn btn-close" aria-label="cerrar">
+            <i class='bx bx-x'></i>
+          </button>
+
+          <ul class='menu__list'>
+            <li class='menu__item'>
+              <a href='#hero' class='menu__link active'>Inicio</a>
+            </li>
+            <li class='menu__item'>
+              <a href='#about' class='menu__link'>Acerca de Mí</a>
+            </li>
+            <li class='menu__item'>
+              <a href='#skills' class='menu__link'>Habilidades</a>
+            </li>
+            <li class='menu__item'>
+              <a href='#projects' class='menu__link'>Proyectos</a>
+            </li>
+            <li class='menu__item'>
+              <a href='#contact' class='menu__link'>Contacto</a>
+            </li>
+          </ul>
+
+          <a href='#' class="btn btn-resume">
+            Descargar C.V.
+          </a>
+        </div>
+
+        <div class="btns">
+          <button type="button" id="btnOpen" class="btn btn-open" aria-label="abrir">
+            <i class='bx bx-menu'></i>
+          </button>
+
+          <button type="button" id="btnTheme" class="btn btn-theme" aria-label="theme">
+            <i class='bx bxs-moon'></i>
+          </button>
+
+          <div class="btn-lang">
+            <a href='/en'>En</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="hero" class="section hero">
+        <div class='container hero__container'>
+
+          <div class="hero__content-img">
+            <img src='assets/img/profile.jpg' class="hero__img" alt='profile'>
+          </div>
+
+          <div class="hero__content-body">
+            <h1 class="hero__title">Hola, <span class="hero__animation">👋🏻</span> soy <br> <span class="hero__name">Alex Restrepo</span></h1>
+
+            <p class="hero__description">
+              <span id="typing"></span>
+            </p>
+
+            <ul class='social'>
+              <li class='social__item'>
+                <a href='#' class='social__link' aria-label="linkedin">
+                  <i class='bx bxl-linkedin'></i>
+                </a>
+              </li>
+              <li class='social__item'>
+                <a href='#' class='social__link' aria-label="github">
+                  <i class='bx bxl-github'></i>
+                </a>
+              </li>
+              <li class='social__item'>
+                <a href='#' class='social__link' aria-label="twitter">
+                  <i class='bx bxl-twitter'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id='about' class="section about">
+        <div class='container'>
+          <h2 class='section section__title'>Acerca de mí</h2>
+
+          <div class='about__content'>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius placeat rem voluptatum alias nisi, vero hic ducimus, eveniet ipsum non aspernatur adipisci harum, sint fuga veritatis cumque itaque laudantium? Doloremque.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius placeat rem voluptatum alias nisi, vero hic ducimus, eveniet ipsum non aspernatur adipisci harum, sint fuga veritatis cumque itaque laudantium? Doloremque.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id='skills' class="section skills">
+        <div class='container'>
+          <h2 class='section section__title'>Habilidades</h2>
+
+          <div class='skills__content'>
+            <div class="skills__container">
+              <div class='skills__card'>
+                <div class="skills__icon">
+                  <img src='assets/icons/html.svg' alt='html'>
+                </div>
+                <span class="skills__text">HTML</span>
+              </div>
+
+              <div class='skills__card'>
+                <div class="skills__icon">
+                  <img src='assets/icons/css.svg' alt='html'>
+                </div>
+                <span class="skills__text">CSS</span>
+              </div>
+
+              <div class='skills__card'>
+                <div class="skills__icon">
+                  <img src='assets/icons/javascript.svg' alt='html'>
+                </div>
+                <span class="skills__text">JavaScript</span>
+              </div>
+
+              <div class='skills__card'>
+                <div class="skills__icon">
+                  <img src='assets/icons/git.svg' alt='html'>
+                </div>
+                <span class="skills__text">Git</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="skills__subtitle">Habilidades Blandas</h3>
+
+              <ul class='skills__list'>
+                <li class='skills__item'>
+                  <i class='bx bx-check'></i>
+                  <span>Trabajo en equipo</span>
+                </li>
+                <li class='skills__item'>
+                  <i class='bx bx-check'></i>
+                  <span>Comunicación</span>
+                </li>
+                <li class='skills__item'>
+                  <i class='bx bx-check'></i>
+                  <span>Adaptabilidad</span>
+                </li>
+                <li class='skills__item'>
+                  <i class='bx bx-check'></i>
+                  <span>Resolución de problemas</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='projects' class="section projects">
+        <div class='container'>
+          <h2 class='section section__title'>Proyectos</h2>
+
+          <div class='projects__container'>
+            <div class='projects__card'>
+              <div class='project__img-container'>
+                <img src='https://source.unsplash.com/random/1080x1920?sig=1' alt='project1' class='projects__img'>
+
+                <div class="projects__links">
+                  <a href='#'>Ver Código</a>
+                  <a href='#'>Ver Proyecto</a>
+                </div>
+              </div>
+              <div class='projects__content'>
+                <h3 class='projects__title'>Proyecto 1</h3>
+                <p class='projects__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+              </div>
+            </div>
+
+            <div class='projects__card'>
+              <div class='project__img-container'>
+                <img src='https://source.unsplash.com/random/1920x1080?sig=1' alt='project1' class='projects__img'>
+
+                <div class="projects__links">
+                  <a href='#'>Ver Código</a>
+                  <a href='#'>Ver Proyecto</a>
+                </div>
+              </div>
+              <div class='projects__content'>
+                <h3 class='projects__title'>Proyecto 2</h3>
+                <p class='projects__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+              </div>
+            </div>
+
+            <div class='projects__card'>
+              <div class='project__img-container'>
+                <img src='https://source.unsplash.com/random/1920x1080?sig=3' alt='project1' class='projects__img'>
+
+                <div class="projects__links">
+                  <a href='#'>Ver Código</a>
+                  <a href='#'>Ver Proyecto</a>
+                </div>
+              </div>
+              <div class='projects__content'>
+                <h3 class='projects__title'>Proyecto 3</h3>
+                <p class='projects__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+              </div>
+            </div>
+
+            <div class='projects__card'>
+              <div class='project__img-container'>
+                <img src='https://source.unsplash.com/random/1920x1080?sig=4' alt='project1' class='projects__img'>
+
+                <div class="projects__links">
+                  <a href='#'>Ver Código</a>
+                  <a href='#'>Ver Proyecto</a>
+                </div>
+              </div>
+              <div class='projects__content'>
+                <h3 class='projects__title'>Proyecto 4</h3>
+                <p class='projects__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id='contact' class="section contact">
+        <div class='container'>
+          <h2 class='section section__title'>Contacto</h2>
+
+          <div class='contact__content'>
+            <p class="contact__text">Si tienen preguntas no duden en enviarme un correo electrónico.</p>
+
+            <div class='contact__box'>
+              <a class="contact__link" href='mailto:john.doe@exmaple.com'>
+                <i class="bx bxs-envelope"></i>
+                <p>john.doe@exmaple.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class='container footer__container'>
+        <p>&copy; 2024 - Todos los derechos reservados</p>
+
+        <ul class='social footer__social'>
+          <li class='social__item'>
+            <a href='#' class='social__link' aria-label="linkedin">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+          </li>
+          <li class='social__item'>
+            <a href='#' class='social__link' aria-label="github">
+              <i class='bx bxl-github'></i>
+            </a>
+          </li>
+          <li class='social__item'>
+            <a href='#' class='social__link' aria-label="twitter">
+              <i class='bx bxl-twitter'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
