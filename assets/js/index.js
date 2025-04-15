@@ -58,7 +58,7 @@ btnTheme.addEventListener('click', function () {
 
 /* =================== Typing =================== */
 var typed = new Typed('#typing', {
-  strings: ['Frontend Developer', 'Web Developer', 'Designer', 'Fullstack Developer'],
+  strings: ['Frontend Developer', 'Web Developer', 'Fullstack Developer'],
   typeSpeed: 50,
   backSpeed: 50,
   startDelay: 25,
