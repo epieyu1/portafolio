@@ -1,18 +1,18 @@
 :root {
   --header-height: 60px;
-  --bg-body: #fdfdfd;
-  --txt-body: #043322;
-  --bg-nav: #f5f5f5;
-  --color-primary: #041f20c9;
+  --bg-body: #f7f4f49f;
+  --txt-body: #050505;
+  --bg-nav: #caf0d6;
+  --color-primary: #0f0f0fc9;
   --btn-color: #011f11;
 }
 
 body.dark {
-  --bg-body: #092b2e;
-  --txt-body: #020202;
+  --bg-body: #A6A197;
+  --txt-body: #0D0C0C;
   --bg-nav: #03111b;
   --btn-color: #ecf7f1;
-  --color-primary: #f5f9fcc2;
+  --color-primary: #262526;
 }
 
 html {
@@ -111,9 +111,13 @@ img {
 }
 
 .logo i {
-  color: #000;
+  color: #ffffffc0;
   font-size: 38px;
   padding-right: 0.5rem ;
+}
+
+.name__logo{
+  color: #ffffffbe;
 }
 
 .menu {
@@ -345,40 +349,6 @@ img {
   transform: scale(1.1);
 }
 
-@keyframes saludo-animacion {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  10% {
-    transform: rotate(14deg);
-  }
-
-  20% {
-    transform: rotate(-8deg);
-  }
-
-  30% {
-    transform: rotate(14deg);
-  }
-
-  40% {
-    transform: rotate(-4deg);
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-
-  60% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 .hero__description {
   font-size: 1.5rem;
   padding: .5em 1em;
@@ -464,7 +434,7 @@ img {
 }
 
 .projects__card {
-  background-color: #00000022;
+  background-color: #8f918e21;
   /* width: 300px; */
   border-radius: 10px;
   overflow: hidden;
@@ -502,7 +472,6 @@ img {
   opacity: 0;
   font-size: 12px;
   color: var(--color-text);
-  background-color: var(--color-primary);
   padding: .5em 1em;
   display: inline-block;
   border-radius: 4px 4px 0 0;
@@ -531,14 +500,14 @@ img {
 .contact__box {
   border: 1px solid var(--btn-color);
   border-radius: 5px;
-  padding: .5em 1em;
+  padding: .5em 0.5em;
   width: max-content;
   margin: 0 auto;
 }
 
 .contact__link {
   text-decoration: none;
-  color: #b4abab;
+  color: #141414;
   display: flex;
   align-items: center;
   gap: 10px
@@ -580,7 +549,7 @@ img {
 
 .footer__social i {
   font-size: 24px;
-  color: var(--color-primary);
+  color: #fff;
   transition: color .5s;
 }
 
