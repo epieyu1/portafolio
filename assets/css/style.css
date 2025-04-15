@@ -1,15 +1,15 @@
 :root {
   --header-height: 60px;
-  --bg-body: #f7f4f49f;
+  --bg-body: #b6b3b39f;
   --txt-body: #050505;
-  --bg-nav: #caf0d6;
+  --bg-nav: #f5f5f5;
   --color-primary: #0f0f0fc9;
   --btn-color: #011f11;
 }
 
 body.dark {
-  --bg-body: #A6A197;
-  --txt-body: #0D0C0C;
+  --bg-body: #646462;
+  --txt-body: #000000;
   --bg-nav: #03111b;
   --btn-color: #ecf7f1;
   --color-primary: #262526;
@@ -35,6 +35,16 @@ body {
   margin: 0;
   font-size: 1.3rem;
 }
+
+body.dark .menu__list{
+  
+  color: #fff;
+}
+
+body.dark .name__logo{
+  color: #fff;
+}
+
 
 img {
   max-width: 100%;
@@ -97,7 +107,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--color-primary);
+  color: var(--bg-nav);
   background-color: var(--bg-nav);
 }
 
@@ -111,13 +121,13 @@ img {
 }
 
 .logo i {
-  color: #ffffffc0;
+  color: #0a0a0ac0;
   font-size: 38px;
   padding-right: 0.5rem ;
 }
 
 .name__logo{
-  color: #ffffffbe;
+  color: #070707be;
 }
 
 .menu {
@@ -211,14 +221,14 @@ img {
   .btn-resume {
     background-color: transparent;
     background-color: var(--bg-alt-color);
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     color: #fff;
     font-weight: 600;
     text-decoration: none;
     width: max-content;
     display: block;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 0.9rem;
     transition: background-color .5s;
     
   }
@@ -247,7 +257,7 @@ img {
 }
 
 .btn-close:hover {
-  background-color: #1b8a83;
+  background-color: #ced1d1;
 }
 
 .btns {
@@ -370,7 +380,7 @@ img {
 }
 
 .social__link {
-  color: var(--bg-body);
+  color: #fff;
   
 }
 
@@ -549,8 +559,12 @@ img {
 
 .footer__social i {
   font-size: 24px;
-  color: #fff;
+  color: #0a0a0a;
   transition: color .5s;
+}
+
+.footer__social i:hover {
+  color: #0a0a0a;
 }
 
 @media (min-width: 900px) {
@@ -659,61 +673,51 @@ img {
   }
 }
 
-/* Unidades de Medida */
-/* Absolutas: px */
+@media (min-width: 1200px) {
+  .menu__list {
+    font-size: 1rem;
+  }
 
-/* Relativas: em, rem, %, vw, vh */
-/* .por {
-  background-color: lightblue;
-  width: 50%;
-}
+  .btn-resume {
+    font-size: 0.8rem;
+  }
 
-.por p {
-  width: 70%;
-  background-color: lightgreen;
-}
+  .menu__list {
+    color: var(--color-primary);
+  }
 
-.vw {
-  width: 50vw;
-  background-color: lightgreen;
-}
+  .name__logo {
+    color: black;
+    font-size: 0.8rem;
+  }
 
-.vw p {
-  position: relative;
-  top: 10px;
-  width: 70vw;
-  background-color: lightblue;
-} */
+  .logo {
+    color: var(--color-primary);
+  }
 
-/* .por {
-  background-color: lightblue;
-  width: 100%;
-  height: 50%;
-}
+  
 
-.vw {
-  width: 100vw;
-  height: 100vh;
-  background-color: lightgreen;
-} */
+  .section__title {
+    font-size: 2.5rem;
+  }
 
-/* min-width de esta anchura para arriba */
-/* max-width de esta anchura para abajo */
+  .hero__title {
+    font-size: 3rem;
+  }
 
-/* @media screen and (max-width: 200px) {
-  .header {
-    background-color: lightgreen;
+  .hero__name {
+    font-size: 3rem;
+  }
+
+  .hero__description {
+    font-size: 2.5rem;
+  }
+
+  .skills__subtitle {
+    font-size: 2rem;
+  }
+
+  .skills__item {
+    font-size: 1.5rem;
   }
 }
-
-@media screen and (min-width: 200px) {
-  .header {
-    background-color: lightcoral;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .header {
-    background-color: lightblue;
-  }
-} */
