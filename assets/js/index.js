@@ -49,7 +49,7 @@ btnTheme.addEventListener('click', function () {
     ls.setItem('darkMode', true)
     btnTheme.firstElementChild.className = sun
   } else {
-    // entonces voy a eliminar del localStorage el valor de dark
+    // entonces voy a eliminar del localStorage el valor de dark para une mejor visualizacion
     ls.removeItem('darkMode')
     btnTheme.firstElementChild.className = moon
   }

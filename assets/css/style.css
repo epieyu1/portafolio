@@ -302,7 +302,7 @@ img {
 .hero {
   background: linear-gradient(0deg, #000000cc, #000000dc 60%), url('../img/fondo.jpg');
   background-size: cover;
-  /* cover | contain */
+  /* cover | container principal de hero */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -401,7 +401,7 @@ img {
 }
 
 
-/* Skills */
+/* Skills / habilidades */
 .skills__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
