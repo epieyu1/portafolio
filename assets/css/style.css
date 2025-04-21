@@ -35,11 +35,15 @@ body {
   color: var(--txt-body);
   font-family: "Delius", cursive;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 body.dark .menu__list{
   
+  color: #fff;
+}
+
+body.dark .menu__link{
   color: #fff;
 }
 
@@ -50,6 +54,7 @@ body.dark .name__logo{
 body.dark .bi {
   color: #fff;
 }
+
 
 body.dark .footer__social i {
   font-size: 24px;
@@ -189,67 +194,7 @@ img {
   color: var(--color-primary);
 }
 
-/* Dispositivos md Tablet */
-/* 0 - 768px */
-@media (max-width: 900px) {
-  .menu {
-    text-align: center;
-    background-color: var(--color-primary);
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    bottom: 0;
-    width: 100%;
-    transition: left .5s;
-  }
 
-  .show-menu {
-    left: 0;
-  }
-
-  .menu__list {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .menu__link {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: color .3s;
-  }
-
-  .menu__link:hover {
-    color: #fff;
-  }
-
-  .menu__link.active {
-    color: rgb(247, 243, 244);
-  }
-
-  .btn-resume {
-    background-color: transparent;
-    background-color: var(--bg-alt-color);
-    border: 1px solid #fff;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    width: max-content;
-    display: block;
-    margin: 0 auto;
-    font-size: 0.8rem;
-    transition: background-color .5s;
-    
-  }
-
-  .btn-resume:hover {
-    background-color: #fff;
-    color: var(--color-primary);
-  }
-}
 
 .btn-close {
   position: absolute;
@@ -318,6 +263,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .hero__title {
@@ -375,6 +321,7 @@ img {
 
 .about__content__text {
   font-family: sans-serif;
+  
 }
 .social {
   list-style: none;
@@ -454,17 +401,38 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-}
-
-.projects__text {
-  font-family: sans-serif;
   text-align: center;
   
 }
 
+.projects__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.projects__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
+}
+
+.btn-project {
+  display: inline-block;
+  background-color: #ff914d;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-project:hover {
+  background-color: #ff7b26;
+}
+
 .projects__card {
   background-color: #d4d6d40e;
-  /* width: 300px; */
   border-radius: 10px;
   overflow: hidden;
 }
@@ -514,7 +482,11 @@ img {
 }
 
 .projects__content {
-  padding: 20px;
+  text-align: left;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Contact */
@@ -526,6 +498,7 @@ img {
 .contact__text {
   margin-bottom: 40px;
   font-family: sans-serif;
+  text-align: center;
 }
 
 .contact__box {
@@ -588,6 +561,68 @@ img {
   color: #0a0a0a;
 }
 
+/* Dispositivos md Tablet */
+/* 0 - 768px */
+@media (max-width: 900px) {
+  .menu {
+    text-align: center;
+    background-color: var(--color-primary);
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    transition: left .5s;
+  }
+
+  .show-menu {
+    left: 0;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .menu__link {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .3s;
+  }
+
+  .menu__link:hover {
+    color: #fff;
+  }
+
+  .menu__link.active {
+    color: rgb(247, 243, 244);
+  }
+
+  .btn-resume {
+    background-color: transparent;
+    background-color: var(--bg-alt-color);
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    transition: background-color .5s;
+    
+  }
+
+  .btn-resume:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+  }
+}
+
 /* movles */
 
 @media (max-width: 768px) {
@@ -603,6 +638,20 @@ img {
     justify-content: center;
     align-items: center;
   }
+
+  body.dark .hero {
+    background: linear-gradient(0deg, #000000e8, #000000d3 60%), url('/assets/img/nueva.JPG');
+    background-size: cover;
+    /* cover | container principal de hero */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
 
   .hero__content-img {
@@ -642,6 +691,14 @@ img {
 
 
 @media (min-width: 1200px) {
+
+  .projects__text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+  }
+
   .menu__list {
     font-size: 1rem;
   }
@@ -663,7 +720,7 @@ img {
     color: var(--color-primary);
   }
 
-  
+
 
   .section__title {
     font-size: 2.5rem;
