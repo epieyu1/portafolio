@@ -337,6 +337,7 @@ img {
 .hero__description {
   min-width: 300px;
   color: #fff;
+  
 }
 
 
@@ -369,8 +370,12 @@ img {
   background-color: var(--color-primary);
   border-radius: 12px;
   text-align: center;
+  
 }
 
+.about__content__text {
+  font-family: sans-serif;
+}
 .social {
   list-style: none;
   padding: 0;
@@ -409,6 +414,10 @@ img {
   
 }
 
+.skills__list{
+  font-family: sans-serif;
+}
+
 .skills__card {
   background-color: #8f918e2a;
   border-radius: 10px;
@@ -445,6 +454,12 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+}
+
+.projects__text {
+  font-family: sans-serif;
+  text-align: center;
+  
 }
 
 .projects__card {
@@ -510,6 +525,7 @@ img {
 
 .contact__text {
   margin-bottom: 40px;
+  font-family: sans-serif;
 }
 
 .contact__box {
@@ -582,7 +598,6 @@ img {
     /* cover | container principal de hero */
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     justify-content: center;
