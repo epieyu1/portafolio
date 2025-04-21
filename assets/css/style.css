@@ -577,7 +577,7 @@ img {
 @media (max-width: 768px) {
 
   .hero {
-    background: linear-gradient(0deg, #000000cc, #000000dc 60%), url('/assets/img/nueva.JPG');
+    background: url('/assets/img/nueva.JPG');
     background-size:cover;
     /* cover | container principal de hero */
     background-repeat: no-repeat;
