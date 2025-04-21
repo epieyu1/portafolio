@@ -13,11 +13,9 @@
     <header class="header">
       <nav class="nav container">
         <a href="/" class="logo">
-        <i class="bi bi-badge-ar"></i>
-          
-          <spanb class="name__logo">Alexx Restrepo </span>
+          <i class="bi bi-badge-ar"></i>
+          <span class="name__logo">Alexx Restrepo</span>
         </a>
-        
 
         <div id="menu" class="menu clase2 clase3">
           <button type="button" id="btnClose" class="btn btn-close" aria-label="cerrar">
@@ -66,13 +64,13 @@
     <main class="main">
       <section id="hero" class="section hero">
         <div class='container hero__container'>
-
+          <!-- Imagen ocultada en dispositivos móviles -->
           <div class="hero__content-img">
             <img src='assets/img/nueva.JPG' class="hero__img" alt='profile' loading="lazy">
           </div>
 
           <div class="hero__content-body">
-            <h1 class="hero__title">Hola soy <br> <span class="hero__name">Alexander  Restrepo</span></h1>
+            <h1 class="hero__title">Hola, soy <br> <span class="hero__name">Alexander Restrepo</span></h1>
 
             <p class="hero__description">
               <span id="typing"></span>
@@ -80,12 +78,12 @@
 
             <ul class='social'>
               <li class='social__item'>
-                <a href='www.linkedin.com/in/alexander-restrepo-epieyu-49096120a' target="_blank"  class='social__link' aria-label="linkedin">
+                <a href='www.linkedin.com/in/alexander-restrepo-epieyu-49096120a' target="_blank" class='social__link' aria-label="linkedin">
                   <i class='bx bxl-linkedin'></i>
                 </a>
               </li>
               <li class='social__item'>
-                <a href='https://github.com/epieyu1' target="_blank"  class='social__link' aria-label="github">
+                <a href='https://github.com/epieyu1' target="_blank" class='social__link' aria-label="github">
                   <i class='bx bxl-github'></i>
                 </a>
               </li>
@@ -95,6 +93,11 @@
                 </a>
               </li>
             </ul>
+
+            <!-- descarga en el espacio de la imagen para móviles -->
+            <a href='/assets/documentos/cv/RestrepoAlexafs.pdf' target="_blank" class="btn btn-resume btn-mobile">
+              Descargar C.V.
+            </a>
           </div>
         </div>
       </section>
@@ -104,11 +107,7 @@
           <h2 class='section section__title'>Acerca de mí</h2>
 
           <div class='about__content'>
-           <p class="about__content__text">Soy un desarrollador Full Stack en formación, apasionado por crear soluciones digitales que sean funcionales y generen un impacto social real. Trabajo con tecnologías como JavaScript, HTML, CSS, Git y Java. <br>
-
-            Mi formación técnica y experiencia en electrónica ha fortalecido mi pensamiento analítico, y gracias a mi experiencia liderando el proyecto Hilando Raíces, he aprendido a combinar la programación con un propósito cultural: preservar y promover la identidad Wayuu a través de herramientas digitales accesibles y significativas.
-
-           </p>
+            <p class="about__content__text">Desarrollador Full Stack en formación, orientado a la creación de soluciones escalables y eficientes. Experiencia con JavaScript, HTML, CSS y control de versiones con Git. Actualmente profundizo en POO con Java (Alura Latam).</p>
           </div>
         </div>
       </section>
@@ -186,41 +185,36 @@
 
       <section id='projects' class="section projects">
         <div class='container'>
-              <h2 class='section section__title'>Proyectos</h2>
+          <h2 class='section section__title'>Proyectos</h2>
 
-              <div class='projects__container'>
-                  <div class='projects__card'>
-                        <div class='project__img-container'>
-                          <img src='/assets/img/proyecto.jpeg' alt='project1' class='projects__img'>
-
-                          <div class="projects__links">
-                      
-                            <a href='https://hilandocultura.netlify.app/' class="pto__enlace">Ver el Proyecto</a>
-                          </div>
-                        </div>
-                        <div class='projects__content'>
-                          <h3 class='projects__title'>Hilando Raíces</h3>
-                          <p class='projects__text'>Hilando Raíces es un proyecto que surge como respuesta a la necesidad de visibilizar y preservar la cultura Wayuu. Fundado a partir de una conexión cercana y un conocimiento profundo de esta comunidad, busca dignificar su legado mediante herramientas digitales y procesos culturales integradores.</p>
-                      </div>
-                    </div>
-
-                    <div class='projects__card'>
-                        <div class='project__img-container'>
-                          <img src='/assets/img/cultura.jpeg' alt='project1' class='projects__img'>
-
-                          <div class="projects__links">
-                          
-                            <a href='https://alex-rancheria.vercel.app/' class="pto__enlace">Ver el Proyecto</a>
-                          </div>
-                        </div>
-                        <div class='projects__content'>
-                          <h3 class='projects__title'>Rancheria</h3>
-                          <p class='projects__text'>Proyecto desarrollado para un líder regional, donde pude identificar de cerca las necesidades de mi comunidad y el valor transformador de la tecnología en contextos rurales.  </p>
-                    </div>
+          <div class='projects__container'>
+            <div class='projects__card'>
+              <div class='project__img-container'>
+                <img src='/assets/img/proyecto.jpeg' alt='project1' class='projects__img'>
+                <div class="projects__links">
+                  <a href='https://hilandocultura.netlify.app/' class="pto__enlace">Ver el Proyecto</a>
+                </div>
               </div>
+              <div class='projects__content'>
+                <h3 class='projects__title'>Hilando Raíces</h3>
+                <p class='projects__text'>Hilando Raíces es un proyecto que surge como respuesta a la necesidad de visibilizar y preservar la cultura Wayuu. Fundado a partir de una conexión cercana y un conocimiento profundo de esta comunidad, busca dignificar su legado mediante herramientas digitales y procesos culturales integradores.</p>
+              </div>
+            </div>
 
+            <div class='projects__card'>
+              <div class='project__img-container'>
+                <img src='/assets/img/cultura.jpeg' alt='project1' class='projects__img'>
+                <div class="projects__links">
+                  <a href='https://alex-rancheria.vercel.app/' class="pto__enlace">Ver el Proyecto</a>
+                </div>
+              </div>
+              <div class='projects__content'>
+                <h3 class='projects__title'>Rancheria</h3>
+                <p class='projects__text'>Proyecto desarrollado para un líder regional, donde pude identificar de cerca las necesidades de mi comunidad y el valor transformador de la tecnología en contextos rurales.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
       </section>
 
       <section id='contact' class="section contact">
@@ -236,7 +230,6 @@
                 <p>epieyualex01@gmail.com</p>
               </a>
             </div>
-            
           </div>
         </div>
       </section>
@@ -265,7 +258,6 @@
         </ul>
       </div>
     </footer>
-
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
