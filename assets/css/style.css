@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Yuji+Boku&display=swap');
-
+/* Variables modo normal */
 :root {
   --header-height: 60px;
   --bg-body: #ffffffda;
@@ -8,7 +8,7 @@
   --color-primary: #0f0f0fc9;
   --btn-color: #011f11;
 }
-
+/* Variables modo oscuro */
 body.dark {
   --bg-body: #646462;
   --txt-body: #000000;
@@ -18,7 +18,6 @@ body.dark {
 }
 
 html {
-  /* root */
   margin-top: 0.5rem;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -37,6 +36,8 @@ body {
   margin: 0;
   font-size: 1rem;
 }
+
+/* Reglas especificas del modo oscuro */
 
 body.dark .menu__list{
   
@@ -68,7 +69,7 @@ img {
   height: auto;
 }
 
-/* Utilities */
+/* sectio, Acerca de mi*/
 .section {
   padding: 45px 0 20px;
 }
@@ -148,8 +149,6 @@ img {
 }
 
 .menu {
-  /* custome propertie */
-  /* --nombre-de-la-propiedad: valor; */
   display: flex;
   gap: 20px;
   background-color: var(--bg-color);
@@ -249,7 +248,6 @@ img {
 .hero {
   background: linear-gradient(0deg, #00000093, #000000a1 60%), url('/assets/img/fondo.jpg');
   background-size: cover;
-  /* cover | container principal de hero */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -396,7 +394,7 @@ img {
   padding: 0;
 }
 
-/* Projects */
+/* Proyectos */
 .projects__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -562,7 +560,7 @@ img {
 }
 
 /* Dispositivos md Tablet */
-/* 0 - 768px */
+
 @media (max-width: 900px) {
   .menu {
     text-align: center;
@@ -630,7 +628,6 @@ img {
   .hero {
     background:linear-gradient(0deg, #00000093, #000000a1 60%), url('/assets/img/nueva.JPG');
     background-size:cover;
-    /* cover | container principal de hero */
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
@@ -642,10 +639,8 @@ img {
   body.dark .hero {
     background: linear-gradient(0deg, #000000e8, #000000d3 60%), url('/assets/img/nueva.JPG');
     background-size: cover;
-    /* cover | container principal de hero */
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -658,8 +653,9 @@ img {
     display: none;
   }
 
+   /* El botón de CV se oculta en pantallas grandes */
   .btn-mobile {
-    display: none; /* El botón de CV se oculta en pantallas grandes */
+    display: none;
   }
 
   .hero__description {
@@ -673,19 +669,18 @@ img {
 
  .hero__title{
     margin-top: 0;
-    margin-bottom: 5rem; /* Ajusta el espacio si es necesario */
+    margin-bottom: 5rem;
   }
 
-  /* Asegurarse de que el botón de CV se vea en el mismo lugar */
   .btn-mobile {
     display: block;
-    margin-top: 6rem; /* Ajusta el espacio entre el texto y el botón */
+    margin-top: 6rem; 
   }
 }
 
 @media (min-width: 769px) {
   .btn-mobile {
-    display: none; /* El botón de CV se oculta en pantallas grandes */
+    display: none; 
   }
 }
 
