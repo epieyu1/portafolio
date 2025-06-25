@@ -443,14 +443,10 @@ img {
 }
 
 .projects__img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   object-fit: cover;
   transition: transform .5s;
-}
-
-.projects__card:hover .projects__img {
-  transform: scale(1.25);
 }
 
 .projects__links {
@@ -477,6 +473,13 @@ img {
 .projects__card:hover .projects__links a {
   visibility: visible;
   opacity: 1;
+}
+
+.masproyecto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+margin: 0 auto;
 }
 
 .projects__content {
